@@ -11,7 +11,7 @@ En este repositorio encontrarás una serie de proyectos diseñados para ayudarte
 - **Proyecto 1**: Contador, pasando parametros en los Widgest.
 - **Proyecto 2**: Descripción breve del segundo proyecto.
 - ...
-- **Práctica Dart**: Si deseas mejorar tus habilidades en Dart, revisa [colección de prácticas de Dart](https://github.com/PePeWee07/Practica_Dart/tree/master) en otro repositorio.
+- <span style="color:blue">Práctica Dart</span>: Si deseas mejorar tus habilidades en Dart, revisa nuestra [colección de prácticas de Dart](https://github.com/PePeWee07/Practica_Dart/tree/master) en otro repositorio.
 
 ## Requisitos
 
