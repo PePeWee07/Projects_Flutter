@@ -32,13 +32,10 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('$clickCounter',
-                  style: const TextStyle(
-                      fontSize: 160, fontWeight: FontWeight.w100)),
+              Text('$clickCounter', style: const TextStyle(fontSize: 160, fontWeight: FontWeight.w100)),
               Text(textCounter, style: const TextStyle(fontSize: 25)),
               //Alternativa a CAMBAIR EL TEXTO
-              Text('Click${clickCounter == 1 ? '' : 's'}',
-                  style: const TextStyle(fontSize: 25))
+              Text('Click${clickCounter == 1 ? '' : 's'}', style: const TextStyle(fontSize: 25))
             ],
           ),
         ),
@@ -93,6 +90,7 @@ class CustomButtom extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       enableFeedback: true,
+      //backgroundColor: Colors.blue,
       elevation: 10,
       shape: const StadiumBorder(),
       onPressed: onPressed,
