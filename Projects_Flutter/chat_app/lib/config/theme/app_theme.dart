@@ -17,7 +17,7 @@ class AppTheme {
 
   AppTheme({this.slectedColor = 0})
   : assert(slectedColor >= 0 && slectedColor <= _colorThemes.length - 1,
-  'Colors must be between 0 and ${_colorThemes.length}');
+  'Colors must be between 0 and ${_colorThemes.length - 1}');
 
 
   ThemeData theme() {
