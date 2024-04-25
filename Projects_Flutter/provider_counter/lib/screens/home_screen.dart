@@ -37,22 +37,24 @@ class _HomeScreenState extends State<HomeScreen> {
             _selectedIndex = index;
           });
         },
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Page 1',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Page 2',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Page 3',
-          ),
-        ],
+        items: _itemsNavigatorBar,
       )
 
     );
+  }
+
+  List<BottomNavigationBarItem> get _itemsNavigatorBar {
+    return <BottomNavigationBarItem>[
+        _btnsNavigatonBar('Page 1'),
+        _btnsNavigatonBar('Page 2'),
+        _btnsNavigatonBar('Page 3'),
+      ];
+  }
+
+  BottomNavigationBarItem _btnsNavigatonBar(String namePage) {
+    return BottomNavigationBarItem(
+        icon: const Icon(Icons.home),
+        label: namePage
+      );
   }
 }

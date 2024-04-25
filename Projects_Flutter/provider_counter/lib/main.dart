@@ -3,18 +3,17 @@ import 'package:provider/provider.dart';
 import 'package:provider_counter/providers/counter_provider.dart';
 import 'package:provider_counter/screens/home_screen.dart';
 
-//void main() => runApp(const MyApp());
+void main() => runApp(const MyApp());
 
 //SEGUNDA FORMA DE UTILIZAR PROVIDER
-//Diferente pero mas barato.... utilizar el descomentado
-void main() {
-  runApp( 
-    ChangeNotifierProvider(
-      create: (_) => CounterProvider(),
-      child: const MyApp()
-    )
-  );
-}
+// void main() {
+//   runApp( 
+//     ChangeNotifierProvider(
+//       create: (_) => CounterProvider(),
+//       child: const MyApp()
+//     )
+//   );
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

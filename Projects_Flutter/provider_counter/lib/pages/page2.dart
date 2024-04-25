@@ -14,7 +14,7 @@ class _Page2State extends State<Page2> {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        context.watch<CounterProvider>().getCounter.toString(),
+        context.watch<CounterProvider>().getValue.toString(),
         style: const TextStyle(fontSize: 50),
       ),
     );
