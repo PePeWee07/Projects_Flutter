@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toktik/domain/entities/video_post.dart';
 import 'package:toktik/presentation/widgets/shared/video_buttons.dart';
-import 'package:toktik/presentation/widgets/video/fullSreenPlayer.dart';
+import 'package:toktik/presentation/widgets/video/fullScreenPlayer.dart';
 
 class VideoScrollableView extends StatelessWidget {
 
@@ -20,10 +20,15 @@ class VideoScrollableView extends StatelessWidget {
 
         return Stack(
           children: [
-            FullSreenPlayer(videoUrl: videoPost.videoUrl, caption: videoPost.caption),
+            //Video player + gradiente
             SizedBox.expand(
-              child: Container(color: Colors.red,),
+              child: FullScreenPlayer(
+                caption: videoPost.caption,
+                videoUrl: videoPost.videoUrl,
+              )
             ),
+            
+            //Botones
             Positioned(
               bottom: 40,
               right: 20,
