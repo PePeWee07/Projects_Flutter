@@ -30,6 +30,10 @@ class MyMessageBubble extends StatelessWidget {
     //   ],
     // );
 
+    final now = DateTime.now();
+    final formattedTime = "${now.hour}:${now.minute.toString().padLeft(2, '0')} ${now.hour >= 12 ? 'PM' : 'AM'}";
+
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
@@ -45,9 +49,9 @@ class MyMessageBubble extends StatelessWidget {
             style: const TextStyle(color: Colors.white),
           ),
         ),
-        const Text(
-          '10:00 PM',
-          style: TextStyle(color: Colors.grey),
+        Text(
+          formattedTime,
+          style: const TextStyle(fontSize: 15),
         ),
       ],
     );

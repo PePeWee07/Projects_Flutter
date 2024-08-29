@@ -13,7 +13,7 @@ class MessageFieldBox extends StatelessWidget {
     final focusNode = FocusNode();
 
     final outlineInpitBorder = UnderlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: BorderRadius.circular(5),
       borderSide: const BorderSide( color: Colors.transparent),
     );
 
@@ -31,21 +31,24 @@ class MessageFieldBox extends StatelessWidget {
         ),
       );
 
-    return TextFormField(
-      onTapOutside: (event) {
-        focusNode.unfocus();
-      },
-      focusNode: focusNode,
-      controller: textController,
-      decoration: inputDecoration,
-      onFieldSubmitted: (value) {
-        textController.clear();
-        focusNode.requestFocus();
-        onValue(value);
-      },
-      // onChanged: (value) {
-      //   print('Mensaje: $value');
-      // },
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
+      child: TextFormField(
+        onTapOutside: (event) {
+          focusNode.unfocus();
+        },
+        focusNode: focusNode,
+        controller: textController,
+        decoration: inputDecoration,
+        onFieldSubmitted: (value) {
+          textController.clear();
+          focusNode.requestFocus();
+          onValue(value);
+        },
+        // onChanged: (value) {
+        //   print('Mensaje: $value');
+        // },
+      ),
     );
   }
 }

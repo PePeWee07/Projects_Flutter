@@ -63,9 +63,7 @@ class _ImageBubble extends StatelessWidget {
             width: size.width * 0.7,
             height: 150,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-            child: const Center(
-              child: CircularProgressIndicator()
-            ),
+            child: const Text('Escribeidno...')
           );
         },
         )

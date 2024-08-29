@@ -18,12 +18,12 @@ class ChatScreen extends StatelessWidget {
         leading: const Padding(
           padding: EdgeInsets.all(5),
           child: CircleAvatar(
-            backgroundImage: NetworkImage(
-              'https://i.ytimg.com/vi/FNx_YiYoy5A/hqdefault.jpg',
+            backgroundImage: AssetImage(
+              'assets/images/image.png',
             ),
           ),
         ),
-        title: const Text(' El comandate 🎖🪖🫡'),
+        title: const Text('My Paisanita 💕'),
         centerTitle: false,
       ),
       body: _ChatView(),

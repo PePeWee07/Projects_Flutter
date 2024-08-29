@@ -9,11 +9,11 @@ class ChatProvider extends ChangeNotifier {
 
   List<Message> messageList = [
     Message(
-      text: 'Como esta mi comandante?',
+      text: 'Como estas mi amor?',
       fromWho: FromWho.me,
     ),
     Message(
-      text: 'Que estas haciendo?',
+      text: 'Te queria hacer unas preguntas...',
       fromWho: FromWho.me,
     ),
   ];
